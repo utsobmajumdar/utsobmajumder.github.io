@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+         body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #33415C;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #0077B6;
+      border-left: 6px solid #7209B7;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #7209B7;
+      margin-top: 30px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    code {
+      background-color: #e8e8e8;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .highlight {
+      background-color: #FB8500;
+      color: #fff;
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: #0077B6;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+    </style>
+</head>
+<body>
+    <section style="margin-bottom: 50px;">
+  <h1>Add Dark Mode to Your Website</h1>
+  <p>Dark mode improves user experience by reducing eye strain and offering a modern look. Implementing it with JavaScript and CSS is easy!</p>
+
+  <h2>1. Add CSS Variables</h2>
+  <pre><code>
+:root {
+  --bg: #ffffff;
+  --text: #33415C;
+}
+
+.dark-mode {
+  --bg: #121212;
+  --text: #f5f5f5;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+  </code></pre>
+
+  <h2>2. Toggle Button with JavaScript</h2>
+  <pre><code>
+const toggle = document.getElementById("darkToggle");
+toggle.onclick = () => {
+  document.body.classList.toggle("dark-mode");
+};
+  </code></pre>
+
+  <h2>3. Optional: Save Preference in LocalStorage</h2>
+  <pre><code>
+localStorage.setItem("theme", "dark"); // or "light"
+  </code></pre>
+
+  <div class="footer">
+    <p>🌙 Let your users choose the look they love!</p>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How HTML Works</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #33415C;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #0077B6;
+      border-left: 6px solid #7209B7;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #7209B7;
+      margin-top: 30px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    code {
+      background-color: #e8e8e8;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .highlight {
+      background-color: #FB8500;
+      color: #fff;
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: #0077B6;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>How HTML Works</h1>
+
+  <p>HTML (HyperText Markup Language) is the foundation of every website on the internet. It tells the browser <span class="highlight">what to display</span> and <span class="highlight">how to structure content</span>.</p>
+
+  <h2>1. The Structure of HTML</h2>
+  <p>HTML uses tags like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code> to organize content into headings, paragraphs, sections, etc. These tags form a <strong>tree-like structure</strong> called the DOM (Document Object Model).</p>
+
+  <h2>2. The Browser's Job</h2>
+  <p>When you open a website, the browser receives HTML files from the server. It reads the tags line-by-line and renders the structure visually on your screen. It also downloads and applies CSS and JavaScript if available.</p>
+
+  <h2>3. Tags & Elements</h2>
+  <p>Each HTML element has an opening and closing tag. For example:</p>
+  <pre><code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
+  <p>Some elements are self-closing, like <code>&lt;img /&gt;</code> or <code>&lt;br /&gt;</code>.</p>
+
+  <h2>4. Common Tags</h2>
+  <ul>
+    <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings</li>
+    <li><code>&lt;p&gt;</code>: Paragraph</li>
+    <li><code>&lt;a&gt;</code>: Links</li>
+    <li><code>&lt;img&gt;</code>: Images</li>
+    <li><code>&lt;div&gt;</code> / <code>&lt;section&gt;</code>: Containers</li>
+  </ul>
+
+  <h2>5. Why HTML Matters</h2>
+  <p>Without HTML, a browser wouldn't know what content to show. It’s the skeleton of every website, making it <span class="highlight">essential for web development</span>.</p>
+
+  <div class="footer">
+    <p>📘 Thanks for reading! This article is part of my web dev series.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+         body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #33415C;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #0077B6;
+      border-left: 6px solid #7209B7;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #7209B7;
+      margin-top: 30px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    code {
+      background-color: #e8e8e8;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .highlight {
+      background-color: #FB8500;
+      color: #fff;
+      padding: 3px 7px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .footer {
+      background-color: #0077B6;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+    </style>
+</head>
+<body>
+    <section style="margin-bottom: 50px;">
+  <h1>LocalStorage vs SessionStorage</h1>
+  <p>Both <span class="highlight">LocalStorage</span> and <span class="highlight">SessionStorage</span> allow storing data in the browser, but they behave differently.</p>
+
+  <h2>1. LocalStorage</h2>
+  <p>Data persists even after the tab or browser is closed. Example:</p>
+  <pre><code>
+localStorage.setItem("username", "Utsob");
+const user = localStorage.getItem("username");
+  </code></pre>
+
+  <h2>2. SessionStorage</h2>
+  <p>Data is lost when the tab is closed:</p>
+  <pre><code>
+sessionStorage.setItem("token", "abc123");
+  </code></pre>
+
+  <h2>3. When to Use</h2>
+  <ul>
+    <li><strong>LocalStorage:</strong> User preferences, themes, cart info.</li>
+    <li><strong>SessionStorage:</strong> One-time logins, form state.</li>
+  </ul>
+
+  <div class="footer">
+    <p>📦 Choose the right storage for better UX and performance.</p>
+  </div>
+</section>
+</body>
+</html>
